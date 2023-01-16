@@ -1,0 +1,103 @@
+# Logfile created on 2023-01-16 17:46:04 +0900 by logger.rb/v1.5.3
+[workflow] [INFO] [2023-01-16 17:46:04 +0900] GET 200 48µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 17:46:04 +0900] GET 404 27µs 127.0.0.1 /users -
+[workflow] [INFO] [2023-01-16 17:48:24 +0900] GET 200 44µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 17:48:24 +0900] GET 200 27ms 127.0.0.1 /manage/users -
+[workflow] [INFO] [2023-01-16 17:48:37 +0900] GET 200 24ms 127.0.0.1 /manage/users -
+[workflow] [INFO] [2023-01-16 17:48:37 +0900] GET 200 26µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 17:49:09 +0900] GET 200 66µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 17:49:09 +0900] GET 200 29ms 127.0.0.1 /manage/users -
+[workflow] [ERROR] [2023-01-16 18:07:35 +0900] GET 500 0µs   -
+  :books doesn't exist in ROM::RelationRegistry registry (ROM::ElementNotFoundError)
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:91:in `block in fetch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:88:in `fetch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:88:in `fetch'
+  /Users/rhiroe/ghq/github.com/rhiroe/workflow/app/actions/manage/users/create.rb:15:in `handle'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:326:in `block in call'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:307:in `catch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:307:in `call'
+  /Users/rhiroe/ghq/github.com/rhiroe/workflow/spec/actions/manage/users/create_spec.rb:7:in `block (2 levels) in <top (required)>'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `instance_exec'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `block in run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `block in with_around_and_singleton_context_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `block in with_around_example_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `block in run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:624:in `run_around_example_hooks_for'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `with_around_example_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `with_around_and_singleton_context_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:259:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:646:in `block in run_examples'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `map'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `run_examples'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:607:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `map'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/configuration.rb:2070:in `with_suite_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:116:in `block in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/reporter.rb:74:in `report'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:115:in `run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:89:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:71:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:45:in `invoke'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/exe/rspec:4:in `<top (required)>'
+  /Users/rhiroe/.rbenv/versions/3.2.0/bin/rspec:25:in `load'
+  /Users/rhiroe/.rbenv/versions/3.2.0/bin/rspec:25:in `<main>'
+[workflow] [INFO] [2023-01-16 18:07:35 +0900] GET 200 74µs 127.0.0.1 / -
+[workflow] [ERROR] [2023-01-16 18:08:35 +0900] GET 500 0µs   -
+  :books doesn't exist in ROM::RelationRegistry registry (ROM::ElementNotFoundError)
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:91:in `block in fetch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:88:in `fetch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rom-core-5.3.0/lib/rom/registry.rb:88:in `fetch'
+  /Users/rhiroe/ghq/github.com/rhiroe/workflow/app/actions/manage/users/create.rb:15:in `handle'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:326:in `block in call'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:307:in `catch'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/hanami-controller-2.0.1/lib/hanami/action.rb:307:in `call'
+  /Users/rhiroe/ghq/github.com/rhiroe/workflow/spec/actions/manage/users/create_spec.rb:7:in `block (2 levels) in <top (required)>'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `instance_exec'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:263:in `block in run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `block in with_around_and_singleton_context_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `block in with_around_example_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `block in run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:624:in `run_around_example_hooks_for'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/hooks.rb:486:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:468:in `with_around_example_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:511:in `with_around_and_singleton_context_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example.rb:259:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:646:in `block in run_examples'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `map'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:642:in `run_examples'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/example_group.rb:607:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (3 levels) in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `map'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:121:in `block (2 levels) in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/configuration.rb:2070:in `with_suite_hooks'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:116:in `block in run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/reporter.rb:74:in `report'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:115:in `run_specs'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:89:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:71:in `run'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/lib/rspec/core/runner.rb:45:in `invoke'
+  /Users/rhiroe/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/rspec-core-3.12.0/exe/rspec:4:in `<top (required)>'
+  /Users/rhiroe/.rbenv/versions/3.2.0/bin/rspec:25:in `load'
+  /Users/rhiroe/.rbenv/versions/3.2.0/bin/rspec:25:in `<main>'
+[workflow] [INFO] [2023-01-16 18:08:35 +0900] GET 200 50µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:09:20 +0900] GET 200 49µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:09:51 +0900] GET 200 47µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:10:27 +0900] GET 200 185µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:11:05 +0900] GET 200 48µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:12:59 +0900] GET 200 50µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:16:10 +0900] GET 200 68µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:22:38 +0900] GET 200 53µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:23:52 +0900] GET 200 51µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:28:37 +0900] GET 200 134µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:30:27 +0900] GET 200 52µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:32:53 +0900] GET 200 58µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:02 +0900] GET 200 62µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:28 +0900] GET 200 56µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:32 +0900] GET 200 57µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:42 +0900] GET 200 52µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:50 +0900] GET 200 59µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:33:55 +0900] GET 200 51µs 127.0.0.1 / -
+[workflow] [INFO] [2023-01-16 18:36:01 +0900] GET 200 51µs 127.0.0.1 / -
